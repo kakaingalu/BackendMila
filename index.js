@@ -253,7 +253,7 @@ async function createPost(postData) {
 }
 
 async function getPosts() {
-  const [rows] = await pool.query('SELECT * FROM posts');
+  const [rows] = await pool.query('SELECT * FROM form');
   return rows;
 }
 
